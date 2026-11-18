@@ -1,0 +1,242 @@
+/* HERO */
+.characters-hero {
+    padding: 100px 20px;
+    text-align: center;
+    background: #0756a5;
+    border-bottom: 5px solid #e63946;
+    color: #ffffff;
+}
+
+.characters-hero p:first-child {
+    color: #ff525d;
+    font-family: 'Russo One', sans-serif;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: normal;
+    letter-spacing: 3px;
+}
+
+.characters-hero h1 {
+    font-family: 'Russo One', sans-serif;
+    font-size: clamp(32px, 5vw, 55px);
+    font-style: italic;
+    font-weight: normal;
+    margin: 15px 0;
+}
+
+.characters-hero p:last-child {
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+/* SECTIONS */
+.character-section {
+    padding: 75px 0;
+}
+
+.protagonists,
+.background-characters {
+    background: #f2f7ff;
+}
+
+.antagonists {
+    background: #e4efff;
+}
+
+/* SECTION HEADINGS */
+.section-heading {
+    margin-bottom: 40px;
+}
+
+.section-heading span {
+    color: #e63946;
+    font-family: 'Russo One', sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    color: #0756a5;
+    font-family: 'Russo One', sans-serif;
+    font-size: 38px;
+    font-style: italic;
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+.section-heading p {
+    color: #526985;
+    max-width: 600px;
+    line-height: 1.7;
+}
+
+/* CARDS */
+.character-card {
+    height: 100%;
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #d4e5fa;
+    border-bottom: 4px solid #e63946;
+    border-radius: 15px;
+    box-shadow: 0 5px 18px rgba(7, 56, 111, 0.08);
+    transition: 0.3s;
+}
+
+.character-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(7, 56, 111, 0.15);
+}
+
+/* IMAGES */
+.character-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3px;
+    height: 240px;
+    background: #0756a5;
+}
+
+.character-image,
+.actor-image {
+    position: relative;
+    min-width: 0;
+    overflow: hidden;
+    background: #dcecff;
+}
+
+.character-image img,
+.actor-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.character-card:hover img {
+    transform: scale(1.05);
+}
+
+.character-image span,
+.actor-image span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 9px 5px;
+    text-align: center;
+    background: rgba(7, 52, 104, 0.88);
+    border-top: 2px solid #e63946;
+    color: #ffffff;
+    font-family: 'Russo One', sans-serif;
+    font-size: 10px;
+    font-style: italic;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+/* MISSING IMAGE */
+.actor-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.actor-placeholder .no-image {
+    position: static;
+    background: none;
+    color: #0756a5;
+    font-family: 'Russo One', sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+}
+
+/* INFORMATION */
+.character-info {
+    padding: 24px;
+}
+
+.character-number {
+    color: #e63946;
+    font-family: 'Russo One', sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.character-info h3 {
+    color: #0756a5;
+    font-family: 'Russo One', sans-serif;
+    font-size: 21px;
+    font-style: italic;
+    font-weight: normal;
+    margin: 8px 0 15px;
+}
+
+.character-info > p {
+    color: #526985;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* VOICE ACTOR */
+.voice-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 15px;
+    background: #eaf3ff;
+    border-left: 4px solid #e63946;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.voice-info strong {
+    color: #0756a5;
+    font-family: 'Russo One', sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.voice-info > span {
+    color: #0756a5;
+    font-weight: 700;
+}
+
+.voice-info .japanese-voice {
+    color: #7892ae;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* RESPONSIVE */
+@media (max-width: 767px) {
+    .characters-hero {
+        padding: 70px 20px;
+    }
+
+    .characters-hero h1 {
+        font-size: 32px;
+    }
+
+    .character-section {
+        padding: 50px 0;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .character-images {
+        height: 230px;
+    }
+
+    .character-info h3 {
+        font-size: 19px;
+    }
+}

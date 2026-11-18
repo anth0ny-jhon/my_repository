@@ -1,0 +1,202 @@
+/* GENERAL SETTINGS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f7ff;
+    color: #102a56;
+}
+
+/* HEADER */
+.top-header {
+    position: sticky;
+    top: 15px;
+    z-index: 1000;
+    width: 96%;
+    margin: 15px auto;
+    background: #0756a5;
+    border-radius: 15px;
+    border-bottom: 3px solid #e63946;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.top-header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* BRAND */
+.top-header .navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    text-decoration: none;
+    white-space: normal;
+}
+
+.top-header .navbar-brand h1 {
+    font-family: 'Russo One', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: normal;
+    margin: 0;
+}
+
+.logo {
+    display: block;
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+/* NAVIGATION */
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Russo One', sans-serif;
+}
+
+.nav-link {
+    color: #ffffff;
+    font-style: italic;
+    font-weight: normal;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #ff525d;
+}
+
+/* FOOTER */
+.site-footer {
+    padding: 55px 0 20px;
+    background: #0756a5;
+    border-top: 4px solid #e63946;
+    color: #ffffff;
+    font-family: 'Russo One', sans-serif;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.footer-logo {
+    display: block;
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.footer-brand h1 {
+    color: #ffffff;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-columns h3 {
+    color: #ff525d;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.footer-columns p {
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.footer-columns a {
+    display: block;
+    width: fit-content;
+    color: #ffffff;
+    font-size: 13px;
+    text-decoration: none;
+    margin-bottom: 12px;
+    transition: 0.3s;
+}
+
+.footer-columns a:hover {
+    color: #ff525d;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #dcecff;
+    font-size: 11px;
+    margin: 0;
+}
+
+/* RESPONSIVE HEADER AND FOOTER */
+@media (max-width: 767px) {
+    .top-header .navbar {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .top-header .navbar-brand h1 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .logo {
+        width: 45px;
+        height: 45px;
+    }
+
+    .navbar-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px 15px;
+    }
+
+    .nav-link {
+        font-size: 12px;
+    }
+
+    .footer-columns {
+        text-align: center;
+    }
+
+    .footer-brand {
+        justify-content: center;
+    }
+
+    .footer-columns a {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
