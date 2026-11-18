@@ -4,11 +4,13 @@
         <meta charset="UTF-8"/>
         <meta name="viewport"
         content="width=device-width, initial-scale=1.0"/>
-        <title>Sakatos Shop</title>
+        <title>Sonic The Hedgehog : The movie (1996)</title>
 
         <!-- External CSS -->
         <link rel="stylesheet" href="css/styles.css" />
-
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
         <!-- Internal CSS -->
         <style>
             /* Small note below button */
@@ -32,222 +34,67 @@
     </head>
     
     <body>
-        <header class="top-header">
+        <header class="top-header", id="header">
             <div class="brand"> <!--Brand on left-->
-                <span class="brand-mark"> SS </span>
-                <h1>Sakatos shop</h1>
+                <img class="logo", src="media/logo2.jpg", width="25%", radius="50%">
+                <h1>Sonic The Hedgehog : The movie (1996)</h1>
+                <style>
+                    .top-header {
+            font-family: 'Russo One', sans-serif;
+        }
+
+
+        .top-header h1 {
+            font-style: italic;
+            font-weight: normal;
+        }
+                </style>
             </div>
 
             <nav class="navbar"> <!--Navigation Bar-->
                 <ul class="nav-list">
-                    <li><a href="#home">Home</a></li>
-                    <li class="dropdown">
-                        <a href="#collections">Collections</a>
-                        <ul class="dropdown-menu"> <!--Sublist-->
-                            <li><a href="#running">Running</a></li>
-                            <li><a href="#casual">Casual</a></li>
-                            <li><a href="#basketball">Basketball</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="feature.html">Features</a></li>
+                    <li><a href="feature.html">Characters</a></li>
+                    <li><a href="character.html">Products</a></li>
+                    <li><a href="#cinema">Cinema</a></li>
+                    <style>
+                        .nav-list {
+                            font-family: 'Russo One', sans-serif;
+                            
+                        }
+                        .nav-list li {
+                            font-style: italic;
+                            font-weight: normal;
+                        }
+                    </style>
                 </ul>
             </nav>
         </header>
-
-        <main id="home" class="container">
-            <!-- HERO SECTION -->
-            <section class="hero">
-
-                <div class="hero-text"> <!--Text-->
-                    <p class="eyebrow">Premium Footwear Presentation</p>
-                    <h2>Step Forward in Style and Comfort</h2>
-                    <p>
-                        Explore out latest shoe collection featuring sleek design, 
-                        product highlights, and modern CSS styling techniques.
-                    </p>
-
-                    <!--Button to collections section -->
-                    <a href="#gallery" class="button">View Collections</a>
-
-                    <p class="hero-note"> <!-- &lt and &gt is "<>"-->
-                        This site uses internal CSS from the &lt;style&gt; block.
-                    </p>
-                </div>
-
-                <div class="hero-img">  <!--Image-->
-                    <img src="media/shoe1.jpg"
-                        alt="Featured purple running shoe" width="400" class="shoe-img">
-                </div>
-            </section>
-
-            <!-- INTERNAL CSS DEMO -->
-            <section class="internal-demo">
-                <h2>Internal CSS Demo</h2>
-                <p>
-                    This box is styled in the HTML file using internal CSS. While
-                    the rest of the page is styled using the external stylesheet.
-                </p>
-            </section>
-
-            <!-- PRODUCT HIGHLIGHTS AND SIZE GUIDE -->
-            <section id="features" class="content-grid">
-
-                <article class="card">
-                    <h3>Product Highlights</h3>
-                    <ul class="features-list">
-                        <li>Lightweight material</li>
-                        <li>Double mesh design</li>
-                        <li>Cusioned sole support</li>
-                        <li>Available in multiple colors</li>
-                    </ul>
-                </article>
-
-                <article class="card">
-                    <h3>Size Guide</h3>
-                    <table class="size-table"> <!--Shoe Size Table-->
-                        <thead>
-                            <tr>
-                                <th>Size</th>
-                                <th>Length (cm)</th>
-                                <th>Fit</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <tr>
-                                <td>7</td>
-                                <td>25.0</td>
-                                <td>Snug</td>
-                            </tr>
-
-                            <tr>
-                                <td>8</td>
-                                <td>26.0</td>
-                                <td>Regular</td>
-                            </tr>
-
-                            <tr>
-                                <td>9</td>
-                                <td>27.0</td>
-                                <td>Roomy</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </article>
-            </section>
-
-            <!-- IMAGE GALLERY -->
-            <section id="gallery" class="gallery-sec">
-                <h2>Image Gallery</h2>
-
-                <div class="gallery"> <!--Shoe Images-->
-                    <figure>
-                        <img src="media/shoe2.jpg"
-                        alt="Purple and white shoes" width="300">
-                    </figure>
-
-                    <figure>
-                        <img src="media/shoe3.jpg"
-                        alt="Purple and white shoes" width="300">
-                    </figure>
-
-                    <figure>
-                        <img src="media/shoe4.jpg"
-                        alt="Purple and white shoes" width="300">
-                    </figure>
-                </div>
-            </section>
-
-            <!-- WHY CHOOSE THIS SHOE AND PURCHASE LINKS -->
-            <section class="info-columns">
-
-                <div id="running" class="grid"> <!--Qualities-->
-                    <h2>Why Choose This Shoe</h2>
-                    <ol class="card-ol">
-                        <li>Comfortable for daily use</li>
-                        <li>Durable sole for long use</li>
-                        <li>modern appearance for casual outfits</li>
-                    </ol>
-                </div>
-
-                <div id="basketball" class="grid"> <!--Links-->
-                    <h2>Purchase Links</h2>
-                    <p>Visit our
-                        <a href="#" class="text-link">Official Store</a>
-                        and
-                        <a href="#" class="text-link">New Arrivals</a>
-                    </p>
-                    <p>
-                        <i class="shoe-icon">👟</i>
-                        Designed for style and performance.
-                    </p>
-                </div>
-            </section>
-
-            <!-- INLINE CSS EXAMPLE -->
-            <section id="collections" class="card"> <!--Inline CSS demo-->
-                <h3>Inline CSS Example</h3>
-                
-                <p>
-                    <span style="color: #6d28d9; font-weight: bolder;">
-                        This sentence uses inline CSS. <!--This is styled with inline-->
-                    </span>
-                    The others do not apply Inline CSS just like this line.
-                </p>
-            </section>
-
-        <!-- FRUIT GRID -->
-            <section class="fruit-grid">
-                <h2>Fruit Collection</h2>
-
-                <div class="fruit-card">
-                    <img src="media/cherry.avif" alt="Cherry">
-                    <p>sweet and juicy small fruit.</p>
-                </div>
-                
-                <div class="fruit-card">
-                    <img src="media/strawberry.avif" alt="Strawberry">
-                    <p>sweet and tasteful fruit </p>
-                </div>
-                
-                <div class="fruit-card">
-                    <img src="media/apple.jpg" alt="Apple">
-                    <p>healthy and juicy fruit </p>
-                </div>
-                
-                <div class="fruit-card">
-                    <img src="media/dragonfruit.webp" alt="Dragonfruit">
-                    <p>A colorful tropical fruit </p>
-                </div>
-                
-                <div class="fruit-card">
-                    <img src="media/orange.avif" alt="Orange">
-                    <p>Juicy citrus fruit with a bright</p>
-                </div>
-                
-                <div class="fruit-card">
-                    <img src="media/mago.webp" alt="Mango">
-                    <p>A tropical fruit known for its juicy texture </p>
-                </div>
-                
-                <div class="fruit-card">
-                    <img src="media/banana.jpg" alt="Banana">
-                    <p>Soft and naturally sweet fruit with a smooth, creamy texture.</p>
-                </div>
-                
-                <div class="fruit-card">
-                    <img src="media/watermelon.webp" alt="Watermelon">
-                    <p>A refreshing, juicy fruit </p>
-                </div>
-            </section>
-        </main>
-
+        
+        <img class="body", src="media/homepage.jpg", width="100%", margin="">
+       
         <!-- FOOTER -->
         <footer class="footer">
-            <p>
-                COPYRIGHT 2026 &copy; Sakatos Shop
-            </p>
+            <img class="f-logo", src="media/logo2.jpg", width="60%">
+            <div class="dev">
+                <h3>DEVELOPERS:</h3>
+               - Anthony Jhon Bagarinao • Lance Aldren Fabros -<br>
+               - Shawn James Gudoy • Cydrick Agualin -
+            </div>
+            <style>
+                .dev{
+                    font-family: 'Russo One', sans-serif;
+                }
+                .dev h1{
+                    font-style: italic;
+                    font-weight: normal;
+                }
+            </style>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li><h1><a href="#header">Menu</a></h1></li>
+                </ul>
+            </nav>
         </footer>
 
     </body>
